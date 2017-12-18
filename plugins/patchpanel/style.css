@@ -1,0 +1,53 @@
+#patchpanel_tooltip {
+	position: fixed;
+	z-index: 10;
+	display: none;
+	border: 3px solid #959FA9;
+	border-radius: 3px;
+	color: #343434;
+	background: #fff;
+}
+
+
+#patchpanel_tooltip .title {
+	
+	background: #ccc;
+	background-image: -webkit-linear-gradient(top, #3A879B8, #2E629D);
+	position: relative;
+	padding: 5px 35px 5px 10px;
+	overflow: hidden;
+	border-width: 0 0 1px;
+	font-weight: bold;
+}
+#patchpanel_tooltip .content {
+	position: relative;
+	padding: 5px 9px;
+	overflow: hidden;
+	text-align: left;
+}
+
+#patchpanel_tooltip table {
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#patchpanel_tooltip p {
+	margin: 0px 0px;;
+}
+
+div.patchpanel {
+	display: inline-block;
+	padding: 20px;
+	vertical-align: top;
+	overflow: none;
+	max-width: 100%;
+}
+
+div.patchpanel_container {
+	display:block;
+	line-height:0;
+	overflow-x: auto; 
+	overflow-y: hidden;
+	width: 100%;
+}

@@ -1,0 +1,22 @@
+
+/* This is the place to define background-styles like for holidays etc.    */
+
+.vacation,
+.vacations,
+.holiday,
+.holidays,
+.Ferien,
+.Urlaub
+{
+	background-image: url(images/holiday2.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-attachment: scroll;
+}
+
+
+.Red   {background-color: #FAA   }
+.Green {background-color: #90EE90; }
+.Blue  {
+	background-color: #ADD8E6;
+}

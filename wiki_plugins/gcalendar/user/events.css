@@ -1,0 +1,94 @@
+
+/* category-styles for date entries. ----------------------------------------------------------- */
+
+.doctor,
+.Arzttermine
+{
+	color: red;
+	font-weight: bold;
+	padding-bottom: 10px;
+	background-image: url(images/doc.gif);
+}
+
+.dentist,
+.Zahnarzt
+{
+	color: Red;
+	font-weight: bold;
+	background-image: url(images/dentist.png);
+}
+
+.Party,
+.Feiern
+{
+	color: Green;
+	font-weight: bold;
+	padding-left: 45px;
+	padding-bottom: 10px;
+	background-image: url(images/party.gif);
+}
+
+.birthday,
+.birthdays,
+.Geburtstagsliste,
+.Geburtstag,
+.Geburtstage
+{
+	color: Green;
+	font-weight: bold;
+	padding-left: 35px;
+	background-image: url(images/birthday.gif);
+}
+
+.Werkstatt,
+.repair
+{
+	color: Green;
+	font-weight: bold;
+	padding-left: 35px;
+	background-image: url(images/car-repair.gif);
+}
+
+.Spielplan,
+.Spielfeste,
+.Punktspiele,
+.Fussball,
+.soccer,
+.Sport
+{
+	color: Green;
+	font-weight: bold;
+	background-image: url(images/ball.gif);
+}
+
+.Pokalspiele
+{
+	color: Green;
+	font-weight: bold;
+	background-image: url(images/pokal.gif);
+}
+
+.bill,
+.Abrechnung,
+.Geld,
+.money
+{
+	color: Green;
+	font-weight: bold;
+	background-image: url(images/money.gif);
+}
+
+.Musik,
+.music
+{
+	color: Green;
+	font-weight: bold;
+	background-image: url(images/musicnote.gif);
+}
+
+.CallCenter
+{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	background-image: url(images/callcenter.gif);
+}

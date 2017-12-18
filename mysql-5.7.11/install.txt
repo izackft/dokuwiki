@@ -1,0 +1,26 @@
+mysql-5.7.11.tar.gz
+
+###########
+## MySQL ##
+###########
+tar -zxvf mysql-5.1.72-linux-x86_64-glibc23.tar.gz
+mv mysql-5.1.72-linux-x86_64-glibc23 /usr/local/
+groupadd mysql
+useradd -r -g mysql mysql
+cd /usr/local/
+ln -s mysql-5.1.72-linux-x86_64-glibc23/ mysql
+cd /usr/local/mysql
+chown -R mysql .
+chgrp -R mysql .
+scripts/mysql_install_db --user=mysql
+scripts/mysql_install_db --user=mysql
+chown -R root .
+chown -R mysql data
+cp support-files/my-medium.cnf /etc/my.cnf
+cp support-files/mysql.server /etc/init.d/mysql.server
+service mysql.server status
+service mysql.server start
+service mysql.server status
+./bin/mysql_secure_installation
+
+

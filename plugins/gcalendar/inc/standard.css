@@ -1,0 +1,163 @@
+/*
+ * standard.css is the main style-sheet for the dokuwiki-plugin gCalendar
+ *
+ * you should not edit this file. modify this files:
+ *
+ *   /user/background.css	--> to set background-pictures for specific events
+ *   /user/events.css       --> to set event-Pictures and text-styles for your events
+ *   /user/other.css        --> to optionally overwrite the styles in the standard.css file 
+ */
+
+
+/* main-table definition ----------------------------------------------------------------------- */
+
+.gCal_table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 2px solid black;
+	padding: 0px;
+	margin: 0px;
+
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.25em;
+}
+
+/* current-date in table-header ---------------------------------------------------------------- */
+
+.gCal_currentDate {
+	padding:5px;
+	font-size:0.5em;
+	color : gray;
+}
+
+/* navi-table (header of main-table) ----------------------------------------------------------- */
+
+.gCal_naviTable {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #DDD;
+	padding: 0px;
+	margin: 0px;
+
+	font-size: 2em;
+	line-height: 1em;
+	
+	border-bottom: 1px solid black;
+}
+
+.gCal_link_prev {text-align: left}
+.gCal_link_next {text-align: right} 
+
+
+/* column-header ------------------------------------------------------------------------------- */
+
+.gCal_columnHead {
+	background-color: #EEE;
+}
+
+.gCal_header a,
+.gCal_header a:visited,
+.gCal_columnHead a,
+.gCal_columnHead a:visited {color: blue}
+
+
+/* definition of event to page links ----------------------------------------------------------- */
+
+.gCal_pagelink a,
+.gCal_pagelink a:visited {
+	color: #888;
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: uppercase;
+	border-top : 1px solid blue;
+	border-bottom : 1px solid blue;
+}
+
+.gCal_pagelink a:hover {
+  background: Blue;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* hide some elements on printout -------------------------------------------------------------- */
+
+@media print {  
+	.gCal_currentDate,
+	.gCal_link_prev,
+	.gCal_link_next,
+	.gCal_pagelink a		{display:none}
+}
+
+
+/* style of date and weekday in month-view */
+
+.gCal_mv_day     {
+	font-size: 1.2em; 
+	font-weight: bold;
+}
+
+.gCal_mv_weekday {
+	font-size: 0.8em; 
+	font-weight: bold;
+}
+
+/* Weekdays  0=sunday ... 6=saturday */
+
+td.gCal_wd {
+	border: 1px solid black;
+	padding: 3px;
+}
+
+td.gCal_wd_datecell {text-align: center}
+
+.gCal_wd {
+	background-color: transparent;
+	font-size: 1em;
+    color: black;
+}
+
+.gCal_wd_6 { /* saturday */
+	background-color: #DDD;
+}
+
+.gCal_wd_0 { /* sunday */
+	background-color: #FDD;
+	color: red;
+}
+
+td.gCal_wd_0 { /* sunday */
+	border-bottom: 2px solid black;
+}
+
+td.gCal_wd_6 { /* saturday */
+	border-top: 2px solid black;
+}
+
+@media screen {
+  td.gCal_today {
+	background-color: yellow;
+	border-top: 3px solid #FFA500; /*orange*/
+	border-bottom: 3px solid #FFA500; /* orange*/
+  }
+
+  td.gCal_todayFrame {
+    border-top: 3px solid #FFA500;
+    border-bottom: 3px solid #FFA500;
+  }
+}
+
+
+/* category-styles for date entries. The category has to be capitalized ! ---------------------- */
+
+.gCal_event {  /* Standard definition of an event entry */
+	display: block;
+	font-size: 0.9em;
+	color:black;
+	padding-left: 25px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background: url(images/date.gif) no-repeat center left;
+}
+

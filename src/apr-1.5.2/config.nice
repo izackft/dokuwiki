@@ -1,0 +1,9 @@
+#! /bin/sh
+#
+# Created by configure
+
+"./configure" \
+"--prefix=/usr/local/apr" \
+"--enable-threads" \
+"--enable-other-child" \
+"$@"

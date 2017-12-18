@@ -1,0 +1,10 @@
+./configure --prefix=/usr/local/pcre  --enable-utf --enable-unicode-properties --enable-jit --enable-pcre16 --enable-pcre32
+
+echo -e "\nTecle <RETURN> ..\c" ; read stop
+
+make
+echo -e "\nTecle <RETURN> ..\c" ; read stop
+
+make install
+echo -e "\nTecle <RETURN> ..\c" ; read stop
+

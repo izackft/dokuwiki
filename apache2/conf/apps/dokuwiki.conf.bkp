@@ -1,0 +1,13 @@
+#ServerAdmin webmaster@mydomain.com
+#DocumentRoot "/app/www/dokuwiki"
+#ServerName wiki.mydomain.com
+ErrorLog "/usr/local/apache2/logs/wiki.mydomain.com-error_log"
+CustomLog "/usr/local/apache2/logs/wiki.mydomain.com-access_log" combined
+
+Alias /dokuwiki /app/www/dokuwiki
+<Directory "/app/www/dokuwiki/">
+       DirectoryIndex index.php
+       Options FollowSymLinks
+       AllowOverride All
+       Require all granted
+</Directory>

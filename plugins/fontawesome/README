@@ -1,0 +1,45 @@
+FontAwesome Plugin for DokuWiki
+
+Embed Font Awesome icons to your pages.
+
+USAGE
+=====
+
+First, make FontAwesome available on your pages.
+See http://fortawesome.github.io/Font-Awesome/. This plugin does not
+install FontAwesome automatically.
+You can edit the template you're using.
+
+To embed FontAwesome icons in your pages use the following syntax:
+ - For FontAwesome < 4.0
+    <faicon icon-phone>
+ - For FontAweomse >= 4.0
+    <faicon fa fa-phone>
+
+The snippet would render the *-phone icon.
+
+=====
+
+All documentation for this plugin can be found at
+http://github.com/mmedvede/dokuwiki-plugin-fontawesome
+
+If you install this plugin manually, make sure it is installed in
+lib/plugins/fontawesome/ - if the folder is called different it
+will not work!
+
+Please refer to http://www.dokuwiki.org/plugins for additional info
+on how to install plugins in DokuWiki.
+
+----
+Copyright (C) Mikhail Medvedev <mmedvede@cs.uml.edu>
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; version 2 of the License
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+See the COPYING file in your DokuWiki folder for details

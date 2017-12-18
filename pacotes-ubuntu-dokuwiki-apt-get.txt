@@ -1,0 +1,14 @@
+    1  pwd
+    2  export http_proxy:http://izack.teixeira:iza2011ck@192.168.236.104:1418
+    3  export http_proxy=http://izack.teixeira:iza2011ck@192.168.236.104:1418
+    4  apt update
+    7  apt install openssl
+    9  apt install libcurl4-openssl-dev
+   12  apt install libssl-dev
+   15  apt-get install apr
+   16  apt install libapr1
+   17  apt install libapr1-dev
+   19  apt install gcc make
+   20  apt-get install build-essential
+
+
